@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Ppomodoro and More</title> 
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-responsive.min.css">
+    
+</head>
+
+
+<body> 
+    <header> 
+        <nav class="navbar navbar-expand-lg ">
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" 
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>           
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-4">
+                <li class="nav-item active">
+                  <a class="nav-link" href="pomodro.html">Pomodro <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="stopwatch.html">Stopwatch</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="countdown.html">Countdown</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 mt-lg-4" style="flex-flow:nowrap ;">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-light my-2 my-sm-0" type="submit" style="color: #edf5e1;">Search</button>
+              </form>
+            </div>
+          </nav>       
+    </header>  
+
+   <audio id="alertSound" src="alarm.mp3" preload="auto"></audio> 
+  
+
+  <section>
+    <div class="container">
+      <div class="countdownHeading">SET THE TIMER THAT YOU WANT TO COUNTDOWN!</div>
+      <div class="form-countdown">
+        <div class="form-group row">
+          <label for="day" class="col-sm-2 col-form-label">Day:</label>
+          <div class="col-sm-10">
+            <input  id="day" class="form-control" style="background-color: #edf5e1;">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="hour" class="col-sm-2 col-form-label">Hour:</label>
+          <div class="col-sm-10">
+            <input  id="hour" class="form-control" style="background-color: #edf5e1;">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="minute" class="col-sm-2 col-form-label">Minute:</label>
+          <div class="col-sm-10">
+            <input  id="minute" class="form-control " style="background-color: #edf5e1;">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="second" class="col-sm-2 col-form-label">Second:</label>
+          <div class="col-sm-10">
+            <input  id="second" class="form-control" style="background-color: #edf5e1;">
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <button type="button" onclick="createCountdown() " class="btn btn-primary">COUNT</button>
+        </div>
+      </div>
+  
+      <div class="countdownInfo">day : hour : minute : second</div>
+      <div class="countdown" id="pageCountdown">00:00:00:00</div>
+    </div>
+  </section> 
+
+
+    <script src="xx.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
