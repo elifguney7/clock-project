@@ -33,43 +33,6 @@ function setAlert() {
   console.log(sTime);
 }
 
-// const pomodroStart = document.querySelector(".pomodroButton");
-// let xx = document.querySelector(".pomodroNumber");
-// pomodroStart.addEventListener("click", pomodroExec);
-
-// function pomodroExec() {
-//   let second = 20;
-//   const Pomodro = setInterval(() => {
-//     second--;
-//     xx.innerHTML = `${second} `;
-//     if (second === 0) {
-//       clearInterval(Pomodro);
-//     }
-//   }, 1000);
-// }
-
-const pomodroStart = document.querySelector(".pomodroButton");
-let xx = document.querySelector("#pomodroNumber"); // Updated selector to use #
-pomodroStart.addEventListener("click", pomodroExec);
-
-function pomodroExec() {
-  let second = 20;
-  const Pomodro = setInterval(() => {
-    second--;
-    xx.innerHTML = `${second} `;
-    if (second === 0) {
-      clearInterval(Pomodro);
-    }
-  }, 1000);
-}
-
-
-
-
-
-
-
-
 
 
 //Countdown
